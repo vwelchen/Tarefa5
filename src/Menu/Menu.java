@@ -2,6 +2,8 @@ package Menu;
 
 import java.util.Scanner;
 
+import Visitor.PrincipalVisitor;
+
 public class Menu {
 	
 	private Scanner leitura;
@@ -79,7 +81,8 @@ public class Menu {
 						break;		
     					
         		case 12:
-                
+        				//printar a explicação do design e como o exemplo explica o projeto
+        				PrincipalVisitor.main(null);
         				break;
             
         		default:
@@ -88,10 +91,11 @@ public class Menu {
         	menu();
         	System.out.println("\nINFORME SUA OPÇÃO: ");
             opcao = leitura.nextInt();
+            
         }
     }        
  
     public static void main(String[] args) {
-        Menu menu = new Menu();                    
+        Menu menu = new Menu();
     }
 }
