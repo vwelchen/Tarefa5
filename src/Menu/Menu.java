@@ -2,6 +2,7 @@ package Menu;
 
 import java.util.Scanner;
 
+import AbstractFactory.PrincipalAbsFactory;
 import Visitor.PrincipalVisitor;
 
 public class Menu {
@@ -14,8 +15,7 @@ public class Menu {
 	}
 	
     public  void menu(){
-        System.out.println("\n>>>DESIGN PATTERNS<<<");
-        System.out.println("0 - Sair");
+        System.out.println("\n>>>DESIGN PATTERNS<<<");        
         System.out.println("1 - Abstract Factory");
         System.out.println("2 - Bridge");
         System.out.println("3 - Chain of Responsibility");
@@ -28,6 +28,7 @@ public class Menu {
         System.out.println("10 - Proxy");
         System.out.println("11 - State");
         System.out.println("12 - Visitor");
+        System.out.println("0 - Sair");
     }
   
     public void controle(){
@@ -38,7 +39,7 @@ public class Menu {
         while(opcao != 0){
         	switch(opcao){
         		case 1: 
-            	
+        				PrincipalAbsFactory.main(null);
         				break;
                 
         		case 2:
