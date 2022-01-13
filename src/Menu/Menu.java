@@ -5,6 +5,8 @@ import java.util.Scanner;
 import AbstractFactory.PrincipalAbsFactory;
 import Bridge.PrincipalBridge;
 import ChainsOfResponsibility.PrincipalChainsOfResponsibility;
+import Composite.PrincipalComposite;
+import Facade.PrincipalFacade;
 import Visitor.PrincipalVisitor;
 
 public class Menu {
@@ -58,10 +60,11 @@ public class Menu {
 				break;
 
 			case 5:
-
+				PrincipalComposite.main(null);
 				break;
+				
 			case 6:
-
+				PrincipalFacade.main(null);
 				break;
 
 			case 7:
