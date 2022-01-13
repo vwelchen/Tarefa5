@@ -9,6 +9,7 @@ import Composite.PrincipalComposite;
 import Facade.PrincipalFacade;
 import Flyweight.PrincipalFlyweight;
 import Mediator.PrincipalMediator;
+import Memento.PrincipalMemento;
 import Visitor.PrincipalVisitor;
 
 public class Menu {
@@ -78,7 +79,7 @@ public class Menu {
 				break;
 
 			case 9:
-
+				PrincipalMemento.main(null);
 				break;
 
 			case 10:
