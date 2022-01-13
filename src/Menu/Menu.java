@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import AbstractFactory.PrincipalAbsFactory;
 import Bridge.PrincipalBridge;
+import ChainsOfResponsibility.PrincipalChainsOfResponsibility;
 import Visitor.PrincipalVisitor;
 
 public class Menu {
@@ -19,16 +20,17 @@ public class Menu {
 		System.out.println("\n>>>DESIGN PATTERNS<<<");
 		System.out.println("1 - Abstract Factory");
 		System.out.println("2 - Bridge");
-		System.out.println("3 - Chain of Responsibility");
-		System.out.println("4 - Composite");
-		System.out.println("5 - Facade");
-		System.out.println("6 - Flyweight");
-		System.out.println("7 - Mediator");
-		System.out.println("8 - Memento");
-		System.out.println("9 - Prototype");
-		System.out.println("10 - Proxy");
-		System.out.println("11 - State");
-		System.out.println("12 - Visitor");
+		System.out.println("3 - Builder");
+		System.out.println("4 - Chain of Responsibility");
+		System.out.println("5 - Composite");
+		System.out.println("6 - Facade");
+		System.out.println("7 - Flyweight");
+		System.out.println("8 - Mediator");
+		System.out.println("9 - Memento");
+		System.out.println("10 - Prototype");
+		System.out.println("11 - Proxy");
+		System.out.println("12 - State");
+		System.out.println("13 - Visitor");
 		System.out.println("0 - Sair");
 	}
 
@@ -46,18 +48,18 @@ public class Menu {
 			case 2:
 				PrincipalBridge.main(null);
 				break;
-
+				
 			case 3:
 
 				break;
 
 			case 4:
-
+				PrincipalChainsOfResponsibility.main(null);
 				break;
+
 			case 5:
 
 				break;
-
 			case 6:
 
 				break;
@@ -83,6 +85,10 @@ public class Menu {
 				break;
 
 			case 12:
+
+				break;
+
+			case 13:
 				// printar a explicação do design e como o exemplo explica o projeto
 				PrincipalVisitor.main(null);
 				break;
