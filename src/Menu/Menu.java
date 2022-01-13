@@ -7,6 +7,7 @@ import Bridge.PrincipalBridge;
 import ChainsOfResponsibility.PrincipalChainsOfResponsibility;
 import Composite.PrincipalComposite;
 import Facade.PrincipalFacade;
+import Flyweight.PrincipalFlyweight;
 import Visitor.PrincipalVisitor;
 
 public class Menu {
@@ -68,7 +69,7 @@ public class Menu {
 				break;
 
 			case 7:
-
+				PrincipalFlyweight.main(null);
 				break;
 
 			case 8:
