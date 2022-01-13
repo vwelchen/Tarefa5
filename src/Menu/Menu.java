@@ -8,6 +8,7 @@ import ChainsOfResponsibility.PrincipalChainsOfResponsibility;
 import Composite.PrincipalComposite;
 import Facade.PrincipalFacade;
 import Flyweight.PrincipalFlyweight;
+import Mediator.PrincipalMediator;
 import Visitor.PrincipalVisitor;
 
 public class Menu {
@@ -73,7 +74,7 @@ public class Menu {
 				break;
 
 			case 8:
-
+				PrincipalMediator.main(null);
 				break;
 
 			case 9:
