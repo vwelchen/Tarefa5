@@ -10,6 +10,8 @@ import Facade.PrincipalFacade;
 import Flyweight.PrincipalFlyweight;
 import Mediator.PrincipalMediator;
 import Memento.PrincipalMemento;
+import Proxy.PrincipalProxy;
+import State.PrincipalState;
 import Visitor.PrincipalVisitor;
 
 public class Menu {
@@ -87,11 +89,11 @@ public class Menu {
 				break;
 
 			case 11:
-
+				PrincipalProxy.main(null);
 				break;
 
 			case 12:
-
+				PrincipalState.main(null);
 				break;
 
 			case 13:
