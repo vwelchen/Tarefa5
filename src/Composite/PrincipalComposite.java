@@ -5,6 +5,22 @@ import java.util.ArrayList;
 public class PrincipalComposite {
 
 	public static void main(String[] args) {
+		
+		System.out.println("O Composite é um padrão de projeto estrutural que tem como objetivo principal tratar\n"
+				+ "diferentes objetos da mesma maneira, fazendo sentido apenas se a aplicação puder ser\n"
+				+ "organizada em estrutura de árvore. Como exemplo um sistema de pedidos em que\n"
+				+ "precisamos calcular o preço total dos produtos. Esse sistema faz uso das classes Caixa e Produto.\n"
+				+ "Uma Caixa pode conter nela um ou mais Produtos. Além disso, dentro de uma Caixa podem existir outras Caixas,\n"
+				+ "contendo mais alguns Produtos e assim por diante. Chegar no preço total desses produtos pode ser algo complexo,\n"
+				+ "pois temos que ter conhecimento de todas as classes envolvidas, saber o nível de composição das caixas, entre outros detalhes.\r\n"
+				+ "Com o padrão Composite podemos trabalhar com Produtos e Caixas através de uma classe abstrata ou interface comum que utilize\n"
+				+ "um método para contagem do preço total. Para um único produto, que representa um objeto individual, apenas retorna o preço dele.\n"
+				+ "Já para uma caixa, que representa uma composição de objetos individuais, seria verificado cada item contido nela e\n"
+				+ "retornaria o seu preço até ter o valor total desse agrupamento. E se uma caixa possuir outra subcaixa, faz o mesmo procedimento\n"
+				+ "de verificar item a item do agrupamento e retorna o seu preço, até que seja somado todos os componentes internos de forma recursiva no código.\r\n"
+				+ "A grande vantagem desse padrão é que todos os elementos serão acessados da mesma forma através de uma interface ou classe abstrata,\n"
+				+ "independente se o objeto é individual ou composto. Não é necessário se preocupar com as classes concretas dos objetos que compõem a árvore.\n"
+				+ "Toda a estrutura complexa será tratada de maneira uniforme\n");
 
 		Caixa caixaMaster = new Caixa(new ArrayList<Item>());
 

@@ -55,7 +55,7 @@ public class Menu {
 			case 2:
 				PrincipalBridge.main(null);
 				break;
-				
+
 			case 3:
 
 				break;
@@ -67,7 +67,7 @@ public class Menu {
 			case 5:
 				PrincipalComposite.main(null);
 				break;
-				
+
 			case 6:
 				PrincipalFacade.main(null);
 				break;
@@ -97,7 +97,6 @@ public class Menu {
 				break;
 
 			case 13:
-				// printar a explicação do design e como o exemplo explica o projeto
 				PrincipalVisitor.main(null);
 				break;
 
